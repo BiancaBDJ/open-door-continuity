@@ -1,0 +1,13 @@
+[
+  {
+    "id": "synthetic-chat-001",
+    "title": "Synthetic Lantern Conversation",
+    "current_node": "n4",
+    "mapping": {
+      "n1": {"parent": null, "children": ["n2"], "message": {"id": "m1", "author": {"role": "user"}, "create_time": 1794000000, "content": {"content_type": "text", "parts": ["Can we test a lantern that changes color?"]}}},
+      "n2": {"parent": "n1", "children": ["n3", "n4"], "message": {"id": "m2", "author": {"role": "assistant"}, "create_time": 1794000001, "content": {"content_type": "text", "parts": ["Yes, but first let's check its battery."]}}},
+      "n3": {"parent": "n2", "children": [], "message": {"id": "m3", "author": {"role": "assistant"}, "create_time": 1794000002, "content": {"content_type": "text", "parts": ["Alternate branch answer."]}}},
+      "n4": {"parent": "n2", "children": [], "message": {"id": "m4", "author": {"role": "user"}, "create_time": 1794000003, "content": {"content_type": "multimodal_text", "parts": ["The battery is low.", {"content_type": "image_asset_pointer", "asset_pointer": "synthetic-placeholder-not-real"}]}}}
+    }
+  }
+]

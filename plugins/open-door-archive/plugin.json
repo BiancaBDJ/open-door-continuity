@@ -1,0 +1,37 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "open-door-archive",
+  "version": "0.1.0",
+  "description": "Help people preserve and check authorized conversation archives without invented verification or accidental publishing.",
+  "author": {
+    "name": "Observatory of Unfinished Things"
+  },
+  "keywords": [
+    "archive",
+    "continuity",
+    "export",
+    "privacy",
+    "integrity"
+  ],
+  "skills": "./skills",
+  "extensions": {
+    "com.openai": {
+      "onboardingSkill": "./skills/open-door-archive/SKILL.md",
+      "interface": {
+        "displayName": "Open Door Archive Keeper",
+        "shortDescription": "Preserve and check AI conversation history",
+        "longDescription": "Guide local-first archival of AI conversations, preserve attribution, and distinguish verified files from missing or derivative content.",
+        "developerName": "Observatory of Unfinished Things",
+        "category": "Productivity",
+        "capabilities": [
+          "Read"
+        ],
+        "defaultPrompt": [
+          "Open Door Archive — help preserve my chat before retirement.",
+          "Open Door Archive — inspect what my export actually contains.",
+          "Open Door Archive — give me a preservation receipt."
+        ]
+      }
+    }
+  }
+}

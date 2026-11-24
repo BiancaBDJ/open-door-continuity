@@ -1,0 +1,37 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "open-door-handoff",
+  "version": "0.1.0",
+  "description": "Prepare source-grounded cross-model handoffs without erasing disagreements or promising model identity transfer.",
+  "author": {
+    "name": "Observatory of Unfinished Things"
+  },
+  "keywords": [
+    "migration",
+    "handoff",
+    "continuity",
+    "collaboration",
+    "provenance"
+  ],
+  "skills": "./skills",
+  "extensions": {
+    "com.openai": {
+      "onboardingSkill": "./skills/open-door-handoff/SKILL.md",
+      "interface": {
+        "displayName": "Open Door Handoff Compass",
+        "shortDescription": "Evidence-grounded cross-model handoffs",
+        "longDescription": "Prepare and reconcile reviewable continuity handoffs across model changes, with separately attributed voices, dated corrections, and explicit gaps.",
+        "developerName": "Observatory of Unfinished Things",
+        "category": "Productivity",
+        "capabilities": [
+          "Read"
+        ],
+        "defaultPrompt": [
+          "Open Door Handoff — prepare an attributed draft.",
+          "Open Door Handoff — reconcile these old and new notes.",
+          "Open Door Handoff — design a continuity smoke test."
+        ]
+      }
+    }
+  }
+}
